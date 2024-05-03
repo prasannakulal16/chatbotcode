@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot SDK Example</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chatbot-container"></div>
+    <script type="module">
+      import ChatbotSDK from "./chatbot.js";
+
+      // Replace 'YOUR_API_KEY' with your actual API key
+      const chatbot = new ChatbotSDK("YOUR_API_KEY");
+      // Ensure initChatbot() is called after the DOM is loaded
+      document.addEventListener("DOMContentLoaded", () => {
+        chatbot.initChatbot();
+      });
+    </script>
+  </body>
+</html>
