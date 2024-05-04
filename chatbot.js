@@ -1,6 +1,6 @@
 // chatbot-sdk.js
 
-export default class ChatbotSDK {
+class ChatbotSDK {
   constructor(apiKey) {
     this.API_KEY = apiKey;
   }
@@ -128,3 +128,5 @@ export default class ChatbotSDK {
     }, 0);
   }
 }
+
+window.ChatbotSDK = ChatbotSDK;
