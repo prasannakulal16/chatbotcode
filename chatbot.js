@@ -10,6 +10,9 @@ class ChatbotSDK {
     // Create chatbot toggler button
 
     setTimeout(() => {
+      const chatbotContainers = document.createElement("div");
+      chatbotContainers.classList.add("chatbot-container");
+      document.body.appendChild(chatbotContainers);
       // Create chatbot UI elements dynamically
       const chatbotContainer = document.querySelector(".chatbot-container");
       console.log("chatbotContainer", chatbotContainer);
